@@ -4,7 +4,7 @@
     "slug": "gabrial",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icons/icon-48.png",
+    "icon": "./assets/icons/icon-192.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,21 +13,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icons/icon-48.png",
+        "foregroundImage": "./assets/icons/icon-192.png",
         "backgroundColor": "#121212"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/icons/icon-48.png"
+      "favicon": "./assets/icons/icon-192.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/icons/icon-48.png",
+          "image": "./assets/icons/icon-192.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#121212"

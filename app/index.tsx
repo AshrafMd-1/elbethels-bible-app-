@@ -1,10 +1,10 @@
-import { View } from "react-native";
+import { ScrollView } from "react-native";
 import Greeting from "@/components/ui/home/Greeting";
 import ContinueTabGroup from "@/components/ui/home/continueTabGroup";
 
 const Index = () => {
   return (
-    <View
+    <ScrollView
       style={{
         flex: 1,
         backgroundColor: "#121212",
@@ -14,7 +14,14 @@ const Index = () => {
     >
       <Greeting />
       <ContinueTabGroup />
-    </View>
+      <ContinueTabGroup />
+      <ContinueTabGroup />
+      <ContinueTabGroup />
+      <ContinueTabGroup />
+      <ContinueTabGroup />
+      <ContinueTabGroup />
+      <ContinueTabGroup />
+    </ScrollView>
   );
 };
 
