@@ -10,8 +10,8 @@ const SingleJump = (props: Props) => {
     <View
       style={{
         marginTop: 10,
-        flex: 1,
         height: 200,
+        alignItems: "center",
       }}
     >
       <Image
@@ -20,13 +20,11 @@ const SingleJump = (props: Props) => {
       />
       <Text
         style={{
-          flex: 1,
-          wordWrap: "break-all",
           fontSize: 14,
           color: "#fff",
           marginTop: 6,
-          marginLeft: 2,
-          paddingRight: 10,
+          width: "99%",
+          textAlign: "center",
         }}
       >
         {props.title}

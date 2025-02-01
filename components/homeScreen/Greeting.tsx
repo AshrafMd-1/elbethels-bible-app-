@@ -5,7 +5,7 @@ const Greeting = () => {
   return (
     <View style={st.container}>
       <Image
-        source={require("./../../../assets/images/profile_icon.jpg")}
+        source={require("../../assets/images/profile_icon.jpg")}
         style={st.image}
       />
       <Text style={st.text}>{getGreeting()}</Text>

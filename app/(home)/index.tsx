@@ -1,7 +1,7 @@
 import { FlatList, StyleSheet, View } from "react-native";
-import Greeting from "@/components/ui/home/Greeting";
-import ContinueTabGroup from "@/components/ui/home/continueTabGroup";
-import JumpBackGroup from "@/components/ui/home/JumpBackGroup";
+import Greeting from "@/components/homeScreen/Greeting";
+import ContinueTabGroup from "@/components/homeScreen/continueTabs/continueTabGroup";
+import JumpBackGroup from "@/components/homeScreen/jumpTabs/JumpBackGroup";
 
 const Home = () => {
   const data = [
