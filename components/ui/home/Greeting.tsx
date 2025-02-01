@@ -1,0 +1,38 @@
+import { Image, StyleSheet, Text, View } from "react-native";
+import { getGreeting } from "@/utility/util";
+
+const Greeting = () => {
+  return (
+    <View style={st.container}>
+      <Image
+        source={require("./../../../assets/images/profile_icon.jpg")}
+        style={st.image}
+      />
+      <Text style={st.text}>{getGreeting()}</Text>
+    </View>
+  );
+};
+
+const st = StyleSheet.create({
+  container: {
+    justifyContent: "flex-start",
+    alignItems: "center",
+    marginTop: 20,
+    marginLeft: 10,
+    gap: 20,
+    display: "flex",
+    flexDirection: "row",
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#fff",
+  },
+  image: {
+    width: 30,
+    height: 30,
+    borderRadius: 50,
+  },
+});
+
+export default Greeting;
