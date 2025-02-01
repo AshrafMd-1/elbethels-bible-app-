@@ -56,7 +56,12 @@ const JumpBackGroup = () => {
         renderItem={({ item }) => (
           <SingleJump title={item.title} image={item.image} />
         )}
-        contentContainerStyle={{ paddingHorizontal: 10 }}
+        contentContainerStyle={{
+          paddingHorizontal: 10,
+          flex: 1,
+          flexDirection: "row",
+          gap: 15,
+        }}
       />
     </View>
   );
@@ -67,7 +72,7 @@ const st = StyleSheet.create({
     color: "#fff",
     fontSize: 24,
     fontWeight: "bold",
-    marginTop: 30,
+    marginTop: 20,
     marginLeft: 10,
   },
 });

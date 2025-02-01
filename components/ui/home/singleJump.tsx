@@ -1,4 +1,4 @@
-import { View, Text, Image, ImageProps } from "react-native";
+import { Image, ImageProps, Text, View } from "react-native";
 
 interface Props {
   title: string;
@@ -10,21 +10,23 @@ const SingleJump = (props: Props) => {
     <View
       style={{
         marginTop: 10,
-        marginLeft: 10,
         flex: 1,
+        height: 200,
       }}
     >
       <Image
         source={props.image}
-        style={{ width: 150, height: 150, borderRadius: 10 }}
+        style={{ width: 150, height: 160, borderRadius: 10 }}
       />
       <Text
         style={{
           flex: 1,
           wordWrap: "break-all",
+          fontSize: 14,
           color: "#fff",
-          marginTop: 10,
+          marginTop: 6,
           marginLeft: 2,
+          paddingRight: 10,
         }}
       >
         {props.title}

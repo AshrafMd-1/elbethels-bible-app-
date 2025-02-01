@@ -1,14 +1,18 @@
-import { FlatList, View, Text, StyleSheet } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
 import Greeting from "@/components/ui/home/Greeting";
 import ContinueTabGroup from "@/components/ui/home/continueTabGroup";
 import JumpBackGroup from "@/components/ui/home/JumpBackGroup";
 
-const Index = () => {
+const Home = () => {
   const data = [
     { type: "greeting" },
     { type: "continue" },
     { type: "jumpBack" },
+    { type: "continue" },
     { type: "jumpBack" },
+    { type: "continue" },
+    { type: "jumpBack" },
+    { type: "continue" },
     { type: "jumpBack" },
   ];
 
@@ -28,7 +32,7 @@ const Index = () => {
 
   return (
     <View style={{ flex: 1, backgroundColor: "#121212" }}>
-      <View style={{ flex: 1, marginBottom: 70 }}>
+      <View style={{ flex: 1 }}>
         <FlatList
           data={data}
           renderItem={renderItem}
@@ -46,8 +50,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#121212",
     paddingLeft: 10,
     paddingRight: 10,
-    paddingBottom: 20,
+    paddingBottom: 90,
   },
 });
 
-export default Index;
+export default Home;
