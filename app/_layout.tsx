@@ -14,12 +14,13 @@ const RootLayout = () => {
       <Tab.Navigator
         screenOptions={{
           headerShown: false,
+          tabBarShowLabel: false,
           tabBarStyle: {
             position: "absolute",
             bottom: 0,
             left: 0,
             right: 0,
-            height: 70,
+            height: 60,
             borderTopWidth: 0,
             elevation: 6,
             shadowColor: "#000040",
