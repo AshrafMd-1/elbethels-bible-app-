@@ -1,15 +1,15 @@
 import { Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { usePathname, useRouter } from "expo-router"; // Import usePathname to get the current route
-import { LinearGradient } from "expo-linear-gradient"; // Importing for gradient effect
+import { usePathname, useRouter } from "expo-router";
+import { LinearGradient } from "expo-linear-gradient";
 
 const BottomNavigation = () => {
   const router = useRouter();
-  const pathname = usePathname(); // Get the current route
+  const pathname = usePathname();
 
   return (
     <LinearGradient
-      colors={["rgba(28,28,28,0.9)", "rgba(18,18,18,0.9)"]} // Dark gradient colors similar to Spotify's dark theme
+      colors={["rgba(28,28,28,0.9)", "rgba(18,18,18,0.9)"]}
       style={styles.container}
     >
       {/* Home Button */}
