@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icons/icon-192.png",
         "backgroundColor": "#121212"
-      }
+      },
+      "package": "com.android.elbthel"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +37,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e093658e-a8f7-4a6e-ae32-1a14c2f29ba9"
+      }
     }
   }
 }

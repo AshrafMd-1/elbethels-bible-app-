@@ -1,5 +1,5 @@
 import { FlatList, StyleSheet, View } from "react-native";
-import Greeting from "@/components/homeScreen/Greeting";
+import Header from "@/components/Header";
 import ContinueTabGroup from "@/components/homeScreen/continueTabs/continueTabGroup";
 import JumpBackGroup from "@/components/homeScreen/jumpTabs/JumpBackGroup";
 
@@ -20,7 +20,7 @@ const Home = () => {
   const renderItem = ({ item }) => {
     switch (item.type) {
       case "greeting":
-        return <Greeting />;
+        return <Header />;
       case "continue":
         return <ContinueTabGroup />;
       case "jumpBack":
@@ -32,15 +32,13 @@ const Home = () => {
 
   return (
     <View style={{ flex: 1, backgroundColor: "#121212" }}>
-      <View style={{ flex: 1 }}>
-        <FlatList
-          data={data}
-          renderItem={renderItem}
-          keyExtractor={(item, index) => index.toString()}
-          contentContainerStyle={styles.container}
-          showsVerticalScrollIndicator={false}
-        />
-      </View>
+      <FlatList
+        data={data}
+        renderItem={renderItem}
+        keyExtractor={(item, index) => index.toString()}
+        contentContainerStyle={styles.container}
+        showsVerticalScrollIndicator={false}
+      />
     </View>
   );
 };
