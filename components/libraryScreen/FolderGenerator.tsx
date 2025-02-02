@@ -1,14 +1,15 @@
 import { Pressable, Text, View } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 
 interface Props {
   albumName: string;
   songCount: number;
-  pushToFolderPath: (path: string) => void;
-  popFromFolderPath: () => void;
+  mainFolder: boolean;
 }
 
 const FolderGenerator = (props: Props) => {
+  const router = useRouter();
   return (
     <Pressable
       style={{
@@ -17,7 +18,9 @@ const FolderGenerator = (props: Props) => {
         gap: 20,
         marginBottom: 10,
       }}
-      onPress={() => props.pushToFolderPath(props.albumName)}
+      onPress={() => {
+        console.log("pressed");
+      }}
     >
       <MaterialIcons name="folder-open" size={70} color="white" />
       <View>
