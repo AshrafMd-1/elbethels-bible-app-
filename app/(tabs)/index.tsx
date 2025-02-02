@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import ContinueTabGroup from "@/components/homeScreen/continueTabs/continueTabGroup";
 import JumpBackGroup from "@/components/homeScreen/jumpTabs/JumpBackGroup";
 
-const Home = () => {
+const Index = () => {
   const data = [
     { type: "greeting" },
     { type: "continue" },
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Index;
