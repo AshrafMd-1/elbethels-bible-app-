@@ -25,7 +25,7 @@ export default function TabLayout() {
           },
           tabBarBackground: () => (
             <LinearGradient
-              colors={["rgba(28,28,28,0.9)", "rgba(18,18,18,0.9)"]}
+              colors={["rgba(21,21,21,0.9)", "rgba(0,0,0,0.9)"]}
               style={{ flex: 1 }}
             />
           ),
