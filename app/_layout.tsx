@@ -4,8 +4,14 @@ import { StatusBar } from "react-native";
 const RootLayout = () => {
   return (
     <>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          animation: "slide_from_right",
+        }}
+      >
+        <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="screens/InternalFolder" />
       </Stack>
 
       <StatusBar barStyle={"default"} />

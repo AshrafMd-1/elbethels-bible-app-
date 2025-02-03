@@ -8,7 +8,6 @@ export default function TabLayout() {
       <Tabs
         screenOptions={{
           headerShown: false,
-
           tabBarShowLabel: false,
           tabBarStyle: {
             position: "absolute",
@@ -61,13 +60,6 @@ export default function TabLayout() {
             ),
           }}
         />
-        <Tabs.Screen
-          name="internalFolder/InternalFolder"
-          options={{
-            href: null,
-          }}
-        />
-
         <Tabs.Screen
           name="about"
           options={{

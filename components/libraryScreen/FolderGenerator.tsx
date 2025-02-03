@@ -20,6 +20,7 @@ const FolderGenerator = (props: Props) => {
       }}
       onPress={() => {
         console.log("pressed");
+        router.push("/screens/InternalFolder");
       }}
     >
       <MaterialIcons name="folder-open" size={70} color="white" />

@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 const InternalFolder = () => {
   return (
     <View>
-      <Text>Helow WOrld</Text>
+      <Text>Hello from Internal Folder</Text>
     </View>
   );
 };
