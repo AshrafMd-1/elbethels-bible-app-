@@ -2,12 +2,10 @@ import { FlatList, Text, View } from "react-native";
 import Header from "@/components/Header";
 import FolderGenerator from "@/components/libraryScreen/FolderGenerator";
 import folderPaths from "@/data/path.json";
-import { Link } from "expo-router";
 
 const Library = () => {
   let currentPath = folderPaths;
 
-  // @ts-ignore
   return (
     <View style={{ flex: 1, backgroundColor: "#121212", paddingBottom: 100 }}>
       <View
@@ -32,15 +30,8 @@ const Library = () => {
         >
           Library
         </Text>
-        // @ts-ignore
-        <Link href={"/internalFolder/InternalFolder"}>
-          <Text style={{ color: "white", fontSize: 20, paddingLeft: 10 }}>
-            Go to Internal Folder
-          </Text>
-        </Link>
-        <FlatList
-          // @ts-ignore
 
+        <FlatList
           data={currentPath}
           renderItem={({ item }) => (
             <FolderGenerator
